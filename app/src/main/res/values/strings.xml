@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AndroidLab</string>
+    <string name="avatar_description">User Avatar</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sync_now">Sync Now</string>
+    <string name="export_data">Export</string>
+    <string name="import_data">Import</string>
 </resources>
