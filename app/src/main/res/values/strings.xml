@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">AndroidLab</string>
     <string name="avatar_description">User Avatar</string>
+    <string name="profile_avatar_description">Profile Avatar</string>
     <string name="edit_profile">Edit Profile</string>
+    <string name="save">Save</string>
+    <string name="label_name">Name</string>
+    <string name="label_email">Email</string>
+    <string name="label_avatar_url">Avatar URL</string>
+    <string name="hint_name">Enter name</string>
+    <string name="hint_email">Enter email</string>
+    <string name="hint_avatar_url">Enter avatar URL</string>
     <string name="sync_now">Sync Now</string>
     <string name="export_data">Export</string>
     <string name="import_data">Import</string>

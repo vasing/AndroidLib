@@ -21,6 +21,7 @@ import androidx.compose.ui.viewinterop.AndroidViewBinding // Allows embedding XM
 import androidx.fragment.app.FragmentActivity // Base class for activities that need to support and manage legacy fragments
 import androidx.fragment.app.commit // Inline extension for executing fragment transactions (add, replace) safely
 import com.example.androidlab.databinding.FragmentContainerBinding // Generated class for interacting with the XML fragment container layout
+import com.example.androidlab.databinding.FragmentProfileBinding // Generated class for interacting with the XML profile layout
 import com.example.androidlab.ui.home.HomeFragment // Custom fragment class representing the application's home screen
 import com.example.androidlab.ui.theme.AndroidLabTheme // Custom theme wrapper applying specific colors, shapes, and typography to the app
 
@@ -72,6 +73,12 @@ fun AndroidLabApp() {
                             }
                         }
                     }
+                }
+                AppDestinations.PROFILE -> {
+                    AndroidViewBinding(
+                        factory = FragmentProfileBinding::inflate,
+                        modifier = Modifier.padding(innerPadding)
+                    )
                 }
                 else -> {
                     Greeting(

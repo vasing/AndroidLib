@@ -5,11 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.androidlab.databinding.UserProfileBinding
+import com.example.androidlab.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
 
-    private var _binding: UserProfileBinding? = null
+    private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -17,7 +17,7 @@ class ProfileFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = UserProfileBinding.inflate(inflater, container, false)
+        _binding = FragmentProfileBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -27,6 +27,7 @@ class ProfileFragment : Fragment() {
         // Setup placeholder data
         binding.userNameText.text = "John Doe"
         binding.userEmailText.text = "john.doe@example.com"
+        binding.
         
         binding.editProfileButton.setOnClickListener {
             // Future: Edit profile
